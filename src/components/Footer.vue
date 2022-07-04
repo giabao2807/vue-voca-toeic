@@ -58,4 +58,25 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+footer {
+  margin-top: auto;
+  padding: 100px 25px;
+  background-color: #303030;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media (min-width: 800px) {
+      flex-direction: row;
+      gap: 0px;
+    }
+
+    > div {
+      display: flex;
+      flex: 1;
+    }
+  }
+}
+</style>
