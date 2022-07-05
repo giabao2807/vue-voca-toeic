@@ -92,6 +92,7 @@ footer {
     }
 
     .header{
+      text-align: center;
       font-size: 24px;
       color: #fff;
       text-decoration: none;
