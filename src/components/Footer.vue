@@ -97,6 +97,9 @@ footer {
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+      @media (min-width: 800px) {
+        align-items: initial;
+      }
     }
 
     ul{
