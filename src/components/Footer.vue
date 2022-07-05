@@ -8,16 +8,16 @@
           >
           <ul>
             <li>
-              <a href="#"><youtube class="svd-icon"/></a>
+              <a href="#"><youtube class="svg-icon"/></a>
             </li>
             <li>
-              <a href="#"><twitter class="svd-icon"/></a>
+              <a href="#"><twitter class="svg-icon"/></a>
             </li>
             <li>
-              <a href="#"><instagram class="svd-icon"/></a>
+              <a href="#"><instagram class="svg-icon"/></a>
             </li>
             <li>
-              <a href="#"><linkedin class="svd-icon"/></a>
+              <a href="#"><linkedin class="svg-icon"/></a>
             </li>
           </ul>
         </div>
@@ -77,6 +77,101 @@ footer {
       display: flex;
       flex: 1;
     }
+
+    .left{
+      gap: 32px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 800px){
+        flex-direction: row;
+        align-items: initial;
+        gap:0;
+      }
+    }
+
+    .header{
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    ul{
+      gap:16px;
+      list-style: none;
+      display: flex;
+    }
+
+    .col-1,
+    .col-2 {
+      gap: 32px;
+      display: flex;
+      flex:1;
+      @media (min-width:800px) {
+        gap:0;
+      }
+    }
+
+    .col-1{
+      flex-direction: column;
+
+      h2{
+        text-align: center;
+        @media (min-width:800px) {
+          text-align: initial;
+        }
+      }
+      ul{
+        margin-top: auto;
+
+        li{
+          display: flex;
+          align-items: center;
+          .svg-icon{
+            width: 24px;
+            height:auto;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .col-2{
+      ul{
+        height: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media (min-width:800px) {
+          flex-direction: column;
+        }
+
+        .link{
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .right{
+    gap:32px;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: 800px) {
+      align-items: flex-end;
+      gap:0;
+    }
+  }
+
+  p{
+    margin-top: auto;
   }
 }
 </style>
