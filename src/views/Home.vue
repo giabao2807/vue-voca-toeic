@@ -6,16 +6,30 @@
       v-for="(post, index) in sampleBlogPost"
       :key="index"
     />
+    <div class="blog-card-wrap">
+      <div class="container">
+        <h3>View more recent blog</h3>
+        <div class="blog-cards">
+          <BlogCard
+            v-for="(post, index) in sampleBlogCards"
+            :key="index"
+            :post="post"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import BlogPost from "../components/BlogPost.vue";
+import BlogCard from "../components/BlogCard.vue";
 
 export default {
   name: "Home",
   components: {
     BlogPost,
+    BlogCard,
   },
   data() {
     return {
@@ -39,7 +53,39 @@ export default {
           blogCoverPhoto: "blog3",
         },
       ],
+      sampleBlogCards: [
+        {
+          blogTitle: "Blog Card 01",
+          blogCoverPhoto: "stock-1",
+          blogDate: "July 28,2001",
+        },
+        {
+          blogTitle: "Blog Card 02",
+          blogCoverPhoto: "stock-2",
+          blogDate: "July 28,2001",
+        },
+        {
+          blogTitle: "Blog Card 03",
+          blogCoverPhoto: "stock-3",
+          blogDate: "July 28,2001",
+        },
+        {
+          blogTitle: "Blog Card 04",
+          blogCoverPhoto: "stock-4",
+          blogDate: "July 28,2001",
+        },
+      ],
     };
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.blog-card-wrap {
+  h3 {
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+}
+</style>
