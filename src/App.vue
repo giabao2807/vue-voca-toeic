@@ -73,6 +73,27 @@ export default {
   }
 }
 
+button,
+.router-button {
+  transition: 500ms ease all;
+  cursor: pointer;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #646464;
+  }
+}
+
 .blog-card-wrap {
   position: relative;
   padding: 80px 16px;
