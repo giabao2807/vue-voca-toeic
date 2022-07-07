@@ -7,8 +7,8 @@
         >
         <div class="nav-links">
           <ul v-show="!mobile">
-            <router-link class="link" to="#">Home</router-link>
-            <router-link class="link" to="#">Blog</router-link>
+            <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
+            <router-link class="link" :to="{ name: 'Blogs' }">Blog</router-link>
             <router-link class="link" to="#">Create Post</router-link>
             <router-link class="link" to="#">Login/ Register</router-link>
           </ul>
@@ -18,8 +18,8 @@
     <menuIcons @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
     <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
-        <router-link class="link" to="#">Home</router-link>
-        <router-link class="link" to="#">Blog</router-link>
+        <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
+        <router-link class="link" :to="{ name: 'Blogs' }">Blog</router-link>
         <router-link class="link" to="#">Create Post</router-link>
         <router-link class="link" to="#">Login/ Register</router-link>
       </ul>
@@ -82,7 +82,7 @@ header {
   }
   nav {
     display: flex;
-    padding: 25px 0px;
+    padding: 25px 0;
 
     .branding {
       display: flex;
@@ -95,16 +95,14 @@ header {
         text-decoration: none;
       }
     }
-
     .nav-links {
       position: relative;
       display: flex;
+      flex: 1;
       align-items: center;
       justify-content: flex-end;
 
       ul {
-        margin-right: 32px;
-
         .link {
           margin-right: 32px;
         }

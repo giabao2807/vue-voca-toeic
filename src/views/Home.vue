@@ -6,18 +6,7 @@
       v-for="(post, index) in sampleBlogPost"
       :key="index"
     />
-    <div class="blog-card-wrap">
-      <div class="container">
-        <h3>View more recent blog</h3>
-        <div class="blog-cards">
-          <BlogCard
-            v-for="(post, index) in sampleBlogCards"
-            :key="index"
-            :post="post"
-          />
-        </div>
-      </div>
-    </div>
+    <Blogs></Blogs>
     <div class="updates">
       <div class="container">
         <h2>Never miss a post. Register for your free account today!</h2>
@@ -31,14 +20,14 @@
 
 <script>
 import BlogPost from "../components/BlogPost.vue";
-import BlogCard from "../components/BlogCard.vue";
+import Blogs from "./Blogs.vue";
 import Arrow from "../assets/Icons/arrow-right-light.svg";
 
 export default {
   name: "Home",
   components: {
     BlogPost,
-    BlogCard,
+    Blogs,
     Arrow,
   },
   data() {
@@ -63,29 +52,12 @@ export default {
           blogCoverPhoto: "blog3",
         },
       ],
-      sampleBlogCards: [
-        {
-          blogTitle: "Blog Card 01",
-          blogCoverPhoto: "stock-1",
-          blogDate: "July 28,2001",
-        },
-        {
-          blogTitle: "Blog Card 02",
-          blogCoverPhoto: "stock-2",
-          blogDate: "July 28,2001",
-        },
-        {
-          blogTitle: "Blog Card 03",
-          blogCoverPhoto: "stock-3",
-          blogDate: "July 28,2001",
-        },
-        {
-          blogTitle: "Blog Card 04",
-          blogCoverPhoto: "stock-4",
-          blogDate: "July 28,2001",
-        },
-      ],
     };
+  },
+  computed: {
+    sampleBlogCards() {
+      return this.$store.state.sampleBlogCards;
+    },
   },
 };
 </script>
