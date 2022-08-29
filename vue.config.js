@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: "/vue-voca-toeic/",
   chainWebpack: (config) => {
     const svgRule = config.module.rule("svg");
 
