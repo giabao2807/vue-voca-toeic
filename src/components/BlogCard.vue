@@ -10,21 +10,17 @@
     </div>
 
     <img
-      :src="require(`../assets/blogCards/${post.blogCoverPhoto}.jpg`)"
+      :src="require(`../assets/blogCards/${post.picture}.jpg`)"
       alt="blog-photo"
     />
     <div class="info">
-      <h4>{{ post.blogTitle }}</h4>
-      <h6>Post on: {{ post.blogDate }}</h6>
-      <router-link class="link" to="#">
-        View this post <Arrow class="arrow" />
-      </router-link>
+      <h3>{{ post.vocabulary }}</h3>
+      <h5>Meaning: {{ post.meaning }}</h5>
     </div>
   </div>
 </template>
 
 <script>
-import Arrow from "../assets/Icons/arrow-right-light.svg";
 import Edit from "../assets/Icons/edit-regular.svg";
 import Delete from "../assets/Icons/trash-regular.svg";
 
@@ -32,7 +28,6 @@ export default {
   name: "blogCard",
   props: ["post"],
   components: {
-    Arrow,
     Edit,
     Delete,
   },
@@ -117,15 +112,15 @@ export default {
     padding: 32px 16px;
     color: #000;
 
-    h4 {
+    h3 {
       padding-bottom: 8px;
       font-size: 20px;
       font-weight: 300;
     }
 
-    h6 {
+    h5 {
       font-weight: 400px;
-      font-size: 12px;
+      font-size: 18px;
       padding-bottom: 16px;
     }
 

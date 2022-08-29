@@ -6,7 +6,7 @@
         <input type="checkbox" v-model="editPost" />
       </div>
       <BlogCard
-        v-for="(post, index) in sampleBlogCards"
+        v-for="(post, index) in vocabularyData"
         :key="index"
         :post="post"
       />
@@ -24,8 +24,9 @@ export default {
     BlogCard,
   },
   computed: {
-    sampleBlogCards() {
-      return this.$store.state.sampleBlogCards;
+    vocabularyData() {
+      console.log(this.$store.state.vocabularyData);
+      return this.$store.state.vocabularyData;
     },
     editPost: {
       get() {

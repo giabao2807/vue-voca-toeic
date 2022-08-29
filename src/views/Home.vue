@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <BlogPost :post="welcomeScreen" />
-    <BlogPost
+    <!-- <BlogPost
       :post="post"
       v-for="(post, index) in sampleBlogPost"
       :key="index"
-    />
+    /> -->
     <Blogs></Blogs>
     <div class="updates">
       <div class="container">
-        <h2>Never miss a post. Register for your free account today!</h2>
+        <h2>Never miss a vocabulary. Register for your free account today!</h2>
         <router-link class="router-button" to="#">
-          Register to FireBlogs <Arrow class="arrow arrow-light" />
+          Register to Gia Bao <Arrow class="arrow arrow-light" />
         </router-link>
       </div>
     </div>
@@ -33,10 +33,10 @@ export default {
   data() {
     return {
       welcomeScreen: {
-        title: "Welcome to Giabao's blog",
+        title: "Welcome to Giabao's vocabulary",
         blogPost:
-          "Weekly blog posts from the best authors in the world.\n" +
-          "Join the community and share your thoughts with the world about anime.",
+          "Using to learning vocabulary for toeic.\n" +
+          "Improve with handle common data with vueJS.\n",
         welcomeScreen: true,
         photo: "blog1",
       },
@@ -55,8 +55,8 @@ export default {
     };
   },
   computed: {
-    sampleBlogCards() {
-      return this.$store.state.sampleBlogCards;
+    vocabularyData() {
+      return this.$store.state.vocabularyData;
     },
   },
 };

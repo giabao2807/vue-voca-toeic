@@ -22,7 +22,7 @@ export default {
   },
   created() {},
   mounted() {},
-  methods: {},
+  methods: {},  
   watch: {},
 };
 </script>

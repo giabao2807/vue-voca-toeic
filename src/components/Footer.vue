@@ -4,7 +4,7 @@
       <div class="left">
         <div class="col-1">
           <router-link class="header" :to="{ name: 'home' }"
-            >FireBlogs</router-link
+            >Vocabulary</router-link
           >
           <ul>
             <li>
@@ -24,9 +24,11 @@
         <div class="col-2">
           <ul>
             <router-link class="link" to="{name: 'home'}">Home</router-link>
-            <router-link class="link" to="{name: 'blogs'}">Blogs</router-link>
+            <router-link class="link" to="{name: 'blogs'}"
+              >vocabulary</router-link
+            >
             <router-link v-if="user" class="link" to="{name: 'newpost'}"
-              >Create Post</router-link
+              >Create vocabulary</router-link
             >
             <router-link v-if="!user" class="link" to="{name: 'login'}"
               >Login/ Register</router-link
@@ -35,7 +37,7 @@
         </div>
       </div>
       <div class="right">
-        <p>Copyright 2022 All Right Reserved</p>
+        <p>Copyright 2022</p>
       </div>
     </div>
   </footer>
@@ -78,20 +80,20 @@ footer {
       flex: 1;
     }
 
-    .left{
+    .left {
       gap: 32px;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      @media (min-width: 800px){
+      @media (min-width: 800px) {
         flex-direction: row;
         align-items: initial;
-        gap:0;
+        gap: 0;
       }
     }
 
-    .header{
+    .header {
       text-align: center;
       font-size: 24px;
       color: #fff;
@@ -102,8 +104,8 @@ footer {
       }
     }
 
-    ul{
-      gap:16px;
+    ul {
+      gap: 16px;
       list-style: none;
       display: flex;
     }
@@ -112,48 +114,48 @@ footer {
     .col-2 {
       gap: 32px;
       display: flex;
-      flex:1;
-      @media (min-width:800px) {
-        gap:0;
+      flex: 1;
+      @media (min-width: 800px) {
+        gap: 0;
       }
     }
 
-    .col-1{
+    .col-1 {
       flex-direction: column;
 
-      h2{
+      h2 {
         text-align: center;
-        @media (min-width:800px) {
+        @media (min-width: 800px) {
           text-align: initial;
         }
       }
-      ul{
+      ul {
         margin-top: auto;
 
-        li{
+        li {
           display: flex;
           align-items: center;
-          .svg-icon{
+          .svg-icon {
             width: 24px;
-            height:auto;
+            height: auto;
             color: #fff;
           }
         }
       }
     }
 
-    .col-2{
-      ul{
+    .col-2 {
+      ul {
         height: 100%;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
 
-        @media (min-width:800px) {
+        @media (min-width: 800px) {
           flex-direction: column;
         }
 
-        .link{
+        .link {
           font-size: 16px;
           font-weight: 500;
           color: #fff;
@@ -163,18 +165,18 @@ footer {
     }
   }
 
-  .right{
-    gap:32px;
+  .right {
+    gap: 32px;
     color: #fff;
     align-items: center;
     flex-direction: column;
     @media (min-width: 800px) {
       align-items: flex-end;
-      gap:0;
+      gap: 0;
     }
   }
 
-  p{
+  p {
     margin-top: auto;
   }
 }

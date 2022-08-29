@@ -5,26 +5,46 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    sampleBlogCards: [
+    vocabularyData: [
       {
-        blogTitle: "Blog Card 01",
-        blogCoverPhoto: "stock-1",
-        blogDate: "July 28,2001",
+        vocabulary: "Blog Card 01",
+        picture: "stock-1",
+        meaning: "2020-01-01",
       },
       {
-        blogTitle: "Blog Card 02",
-        blogCoverPhoto: "stock-2",
-        blogDate: "July 28,2001",
+        vocabulary: "Blog Card 02",
+        picture: "stock-2",
+        meaning: "July 28,2001",
       },
       {
-        blogTitle: "Blog Card 03",
-        blogCoverPhoto: "stock-3",
-        blogDate: "July 28,2001",
+        vocabulary: "Blog Card 03",
+        picture: "stock-3",
+        meaning: "July 28,2001",
       },
       {
-        blogTitle: "Blog Card 04",
-        blogCoverPhoto: "stock-4",
-        blogDate: "July 28,2001",
+        vocabulary: "Blog Card 04",
+        picture: "stock-4",
+        meaning: "July 28,2001",
+      },
+      {
+        vocabulary: "Blog Card 01",
+        picture: "stock-1",
+        meaning: "July 28,2001",
+      },
+      {
+        vocabulary: "Blog Card 02",
+        picture: "stock-2",
+        meaning: "July 28,2001",
+      },
+      {
+        vocabulary: "Blog Card 03",
+        picture: "stock-3",
+        meaning: "July 28,2001",
+      },
+      {
+        vocabulary: "Blog Card 04",
+        picture: "stock-4",
+        meaning: "July 28,2001",
       },
     ],
     editPost: null,
