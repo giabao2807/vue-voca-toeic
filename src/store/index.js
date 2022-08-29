@@ -7,44 +7,44 @@ export default new Vuex.Store({
   state: {
     vocabularyData: [
       {
-        vocabulary: "Blog Card 01",
+        vocabulary: "Practically ~ alomost",
+        picture: "1",
+        meaning: "hầu hết",
+      },
+      {
+        vocabulary: "Neglect to ~ to not to do sth",
+        picture: "2",
+        meaning: "quên, bỏ qua làm gì đó",
+      },
+      {
+        vocabulary: "Productive",
+        picture: "3",
+        meaning: "năng suất, hữu ích",
+      },
+      {
+        vocabulary: "Acquires ~ buy sth from",
+        picture: "4",
+        meaning: "mua lại, có được",
+      },
+      {
+        vocabulary: "Pertinent to",
+        picture: "5",
+        meaning: "thích hợp",
+      },
+      {
+        vocabulary: "Simultaneous ~ at the same time",
         picture: "stock-1",
-        meaning: "2020-01-01",
+        meaning: "đồng thời, cùng lúc",
       },
       {
-        vocabulary: "Blog Card 02",
-        picture: "stock-2",
-        meaning: "July 28,2001",
-      },
-      {
-        vocabulary: "Blog Card 03",
-        picture: "stock-3",
-        meaning: "July 28,2001",
-      },
-      {
-        vocabulary: "Blog Card 04",
-        picture: "stock-4",
-        meaning: "July 28,2001",
-      },
-      {
-        vocabulary: "Blog Card 01",
+        vocabulary: "Notwithstanding",
         picture: "stock-1",
-        meaning: "July 28,2001",
+        meaning: "mặc dù",
       },
       {
-        vocabulary: "Blog Card 02",
-        picture: "stock-2",
-        meaning: "July 28,2001",
-      },
-      {
-        vocabulary: "Blog Card 03",
-        picture: "stock-3",
-        meaning: "July 28,2001",
-      },
-      {
-        vocabulary: "Blog Card 04",
-        picture: "stock-4",
-        meaning: "July 28,2001",
+        vocabulary: "Consistently",
+        picture: "6",
+        meaning: "nhất quán",
       },
     ],
     editPost: null,

@@ -100,6 +100,7 @@ export default {
     border-radius: 8px 8px 0 0;
     z-index: 1;
     width: 100%;
+    height: 100%;
     min-height: 200px;
     object-fit: cover;
   }
@@ -107,7 +108,6 @@ export default {
   .info {
     display: flex;
     flex-direction: column;
-    height: 100%;
     z-index: 3;
     padding: 32px 16px;
     color: #000;
